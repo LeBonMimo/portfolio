@@ -1,0 +1,70 @@
+@import "../../vars.scss";
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 28px;
+    margin: 0 10%;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-items {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu-items a {
+    font-size: $fs-400;
+    color: $color-text-light;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 830px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu {
+      position: absolute;
+      right: 0;
+      margin-right: 10%;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 11px;
+      z-index: 3;
+    }
+  
+    .menu-btn {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      gap: 13px;
+      background: rgba(119, 119, 119, 0.25);
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      padding: 24px 33px;
+    }
+  
+    .menu-open {
+      display: flex;
+      z-index: 1;
+    }
+  }
