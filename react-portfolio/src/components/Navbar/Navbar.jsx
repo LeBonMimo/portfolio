@@ -15,7 +15,7 @@ export const Navbar = () => {
                     ? <X className='menu-btn' size={36} color="#ffffff" alt='menu-close-button' onClick={() => setMenuOpen(!menuOpen)}/> 
                     : <List className='menu-btn' size={36} color="#ffffff" alt='menu-button' onClick={() => setMenuOpen(!menuOpen)}/>
                 }
-                <ul className={`${'menu-items'} ${menuOpen && 'menu-open'}`} >
+                <ul className={`${'menu-items'} ${menuOpen && 'menu-open'}`} onClick={() => setMenuOpen(false)}>
                     <li><a href="">Présentation</a></li>
                     <li><a href="">Projets</a></li>
                     <li><a href="">Contact</a></li>

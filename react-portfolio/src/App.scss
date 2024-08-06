@@ -1,7 +1,30 @@
 @import "./vars.scss";
 
+@property --a {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 23.22deg;
+}
+
 .App {
   background-color: $color-bg;
   width: 100%;
   height: 100%;
+}
+
+.hero{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(.png), conic-gradient(from var(--a) at 39.58% 65.43%, rgba(176, 156, 209) 0deg, rgba(33, 9, 73, 0.944448) 324.38deg, #19161D 360deg);
+  animation: 1.5s ease-out bg-rotate;
+}
+
+@keyframes bg-rotate{
+  0%{
+    --a: 23.22deg;
+  }
+  100%{
+    --a: 383.22deg;
+  }
 }
