@@ -13,10 +13,11 @@
 }
 
 .hero{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: url(.png), conic-gradient(from var(--a) at 39.58% 65.43%, rgba(176, 156, 209) 0deg, rgba(33, 9, 73, 0.944448) 324.38deg, #19161D 360deg);
+  background: url(../assets/images/hero/Noise.png), conic-gradient(from var(--a) at 39.58% 65.43%, rgba(176, 156, 209) 0deg, rgba(33, 9, 73, 0.944448) 324.38deg, #19161D 360deg);
+  background-blend-mode: color-burn, normal;
   animation: 1.5s ease-out bg-rotate;
 }
 

@@ -1,6 +1,7 @@
 import "./App.scss"
 import { Hero } from "./components/Hero/Hero"
 import { Navbar } from "./components/Navbar/Navbar"
+import { Pres } from "./components/Pres/Pres"
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <Hero />
       </div>
+      <Pres />
     </div>
   )
 }

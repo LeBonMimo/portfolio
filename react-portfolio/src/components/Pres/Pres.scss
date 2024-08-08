@@ -1,0 +1,73 @@
+@import "../../vars.scss";
+
+.pres {
+  background-color: $color-bg-light;
+  color: $color-text-dark;
+  height: 100vh;
+  padding: 5%;
+  
+}
+
+.pres-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5rem;
+  height: 100%;
+  max-width: 1256px;
+  margin: 0 auto;
+}
+
+.design-section, .dev-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.pres-text {
+    h2 {
+        font-family: $font-title;
+        color: $color-primary;
+        letter-spacing: 1px;
+        font-size: $fs-700;
+        margin-bottom: 1rem;
+        
+    }
+
+    p {
+        font-family: $font-text;
+        font-size: $fs-400;
+        line-height: 1.5;
+    }
+}
+
+.pres-images{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .pres-text {
+    width: 50%;
+  }
+  .pres-images{
+    display: flex;
+    gap: 8%;
+
+    .square-wave {
+      width: 36%;
+      margin-bottom: 34%;
+    }
+
+    .square{
+      width: 56%;
+    }
+
+    .circles{
+      width: 66%;
+    }
+
+    .sine-wave{
+      width: 26%;
+    }
+  }
+}
