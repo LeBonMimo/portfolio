@@ -5,17 +5,16 @@
   color: $color-text-dark;
   height: 100vh;
   padding: 5%;
-  
-}
 
-.pres-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 5rem;
-  height: 100%;
-  max-width: 1256px;
-  margin: 0 auto;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5rem;
+    height: 100%;
+    max-width: 1256px;
+    margin: 0 auto;
+  }
 }
 
 .design-section, .dev-section {

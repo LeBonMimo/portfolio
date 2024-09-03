@@ -1,0 +1,36 @@
+@import "../../vars.scss";
+
+.projects {
+  background: $linear-gradient;
+  color: $color-text-light;
+  height: 100vh;
+  padding: 5%;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    height: 100%;
+    max-width: 1256px;
+    margin: 0 auto;
+  }
+
+  &-title {
+    font-family: $font-title;
+    letter-spacing: 3px;
+    font-size: $fs-800;
+    margin-bottom: 1rem;
+  }
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-gap: 2rem;
+}
+
+.project{
+    background-color: #9E9B9B;
+    opacity: 0.42;
+    height: 300px;
+}
