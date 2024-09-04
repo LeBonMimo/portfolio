@@ -30,7 +30,55 @@
 }
 
 .project{
-    background-color: #9E9B9B;
-    opacity: 0.42;
+    background-color: #674b93;
     height: 300px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+
+    &-logo{
+      width: 124px;
+      position: absolute;
+      left: 50%; transform: translateX(-50%);
+      top: 20px;
+    }
+
+    &-description{
+      background-color: $color-text-light;
+      color: $color-text-dark;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding: 32px;
+      max-height: 80px;
+      transition: .5s ease-in-out;
+      overflow: hidden;
+
+      h3{
+        position: relative;
+        color: $color-secondary;
+        font-weight: bold;
+        font-size: $fs-400;
+        transition: .5s ease-in-out;
+        margin-bottom: .5rem;
+      }
+
+      p{
+        font-size: $fs-400;
+        font-weight: bold;
+        overflow: hidden;
+        transform: translateY(100%);
+        transition: all .5s ease-in-out;
+      }
+
+      
+    }
+
+    &:hover .project-description {
+      max-height: 200px; // Ajuster à la taille nécessaire pour l'affichage complet
+  }
+
+    &:hover .project-description p{
+      transform: translateY(0);
+    }
 }
