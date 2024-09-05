@@ -4,7 +4,7 @@ import { getImageUrl } from '../../utils'
 
 export const Pres = () => {
   return (
-    <section className='pres'>
+    <section id="Pres" className='pres'>
       <div className="pres-container">
         <div className='design-section'>
           <div className='pres-text'>

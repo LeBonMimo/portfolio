@@ -4,7 +4,7 @@ import { getImageUrl } from '../../utils'
 
 export const Projects = () => {
     return(
-        <section className='projects'>
+        <section id='Projects' className='projects'>
             <div className="projects-container">
                 <h2 className='projects-title'>Projets</h2>
                 <div className="projects-grid">
@@ -16,14 +16,14 @@ export const Projects = () => {
                         </div>
                     </a>
                     <a href='#' className="project">
-                        <img src={getImageUrl("projects/Project1.png")} alt="project 1" />
+                        <img className='project-logo-ppp' src={getImageUrl("projects/PPP.png")} alt="project 1" />
                         <div className="project-description">
                             <h3>poufpoufpantoufle.fr</h3>
                             <p>Site de mon groupe de musique</p>
                         </div>
                     </a>
-                    <a href='#' className="project">
-                        <img src={getImageUrl("projects/Project1.png")} alt="project 1" />
+                    <a href='https://www.jeunest.fr/' className="project">
+                        <img className='project-logo' src={getImageUrl("projects/logo-jeun-est.png")} alt="project 1" />
                         <div className="project-description">
                             <h3>jeun'est.fr</h3>
                             <p>Projet durant mon alternance</p>
