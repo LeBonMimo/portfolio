@@ -1,4 +1,5 @@
 import "./App.scss"
+import { Contact } from "./components/Contact/Contact"
 import { Hero } from "./components/Hero/Hero"
 import { Navbar } from "./components/Navbar/Navbar"
 import { Pres } from "./components/Pres/Pres"
@@ -14,6 +15,7 @@ function App() {
       </div>
       <Pres />
       <Projects />
+      <Contact />
     </div>
   )
 }

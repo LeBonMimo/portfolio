@@ -1,0 +1,24 @@
+@import "../../vars.scss";
+
+.contact{
+    height: 100vh;
+    padding: 5%;
+    background: $color-primary;
+    color: $color-text-light;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        height: 100%;
+        max-width: 1256px;
+        margin: 0 auto;
+    }
+
+    &-title {
+        font-family: $font-title;
+        letter-spacing: 3px;
+        font-size: $fs-800;
+        margin-bottom: 1rem;
+      }
+}
