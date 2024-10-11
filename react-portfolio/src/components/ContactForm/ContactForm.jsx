@@ -80,36 +80,37 @@ export const ContactForm = () => {
 
   return (
     <div className="contact-form">
-      <h2>Contactez-moi</h2>
+      <h2 className='contact-title'>Contactez-moi</h2>
 
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {success && <p style={{ color: 'green' }}>{success}</p>}
 
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Nom:</label>
-          <input 
-            type="text" 
-            name="name" 
-            value={formData.name} 
-            onChange={handleChange} 
-            required 
-          />
+        <div className='form-semicolumn'>
+          <div>
+            <label>Nom</label>
+            <input 
+              type="text" 
+              name="name" 
+              value={formData.name} 
+              onChange={handleChange} 
+              required 
+            />
+          </div>
+          
+          <div>
+            <label>Email</label>
+            <input 
+              type="email" 
+              name="email" 
+              value={formData.email} 
+              onChange={handleChange} 
+              required 
+            />
+          </div>
         </div>
-        
         <div>
-          <label>Email:</label>
-          <input 
-            type="email" 
-            name="email" 
-            value={formData.email} 
-            onChange={handleChange} 
-            required 
-          />
-        </div>
-        
-        <div>
-          <label>Sujet:</label>
+          <label>Sujet</label>
           <input 
             type="text" 
             name="subject" 
@@ -119,7 +120,7 @@ export const ContactForm = () => {
         </div>
         
         <div>
-          <label>Message:</label>
+          <label>Message</label>
           <textarea 
             name="message" 
             value={formData.message} 
@@ -127,8 +128,9 @@ export const ContactForm = () => {
             required 
           />
         </div>
-        
-        <button type="submit">Envoyer</button>
+        <div className='form-button-container'>
+          <button type="submit">Envoyer</button>
+        </div>
       </form>
     </div>
   );
