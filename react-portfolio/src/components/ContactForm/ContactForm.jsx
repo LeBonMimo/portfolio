@@ -129,7 +129,7 @@ export const ContactForm = () => {
           />
         </div>
         <div className='form-button-container'>
-          <button type="submit">Envoyer</button>
+          <button role="button" type="submit"><span className='text'>Envoyer</span></button>
         </div>
       </form>
     </div>
