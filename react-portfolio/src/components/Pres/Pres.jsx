@@ -9,7 +9,7 @@ export const Pres = () => {
         <div className='design-section'>
           <div className='pres-text'>
             <h2>Design</h2>
-            <p>Je suis un développeur Front passionné. Je combine une expertise technique solide avec une compréhension approfondie des sciences cognitives, ce qui me permet de créer des expériences utilisateurs exceptionnelles.</p>
+            <p>En tant que designer passionné par l'expérience utilisateur, j'adopte une approche centrée sur l'utilisateur pour créer des interfaces intuitives et fonctionnelles.<br/>Mon objectif est d'allier esthétique et efficacité pour offrir des interfaces claires, engageantes et adaptées à chaque public cible.</p>
           </div>
           <div className='pres-images'>
             <img className='square-wave' src={getImageUrl("pres/Square-wave.svg")} alt="pres image 1" />
