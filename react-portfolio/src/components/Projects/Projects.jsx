@@ -15,7 +15,7 @@ export const Projects = () => {
                             <p>Mon portfolio</p>
                         </div>
                     </a>
-                    <a href='#' className="project">
+                    <a href='https://poufpoufpantoufle.fr' className="project">
                         <img className='project-logo-ppp' src={getImageUrl("projects/PPP.png")} alt="project 1" />
                         <div className="project-description">
                             <h3>poufpoufpantoufle.fr</h3>

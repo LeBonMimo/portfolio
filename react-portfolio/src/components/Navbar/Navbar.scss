@@ -1,33 +1,60 @@
 @import "../../vars.scss";
 
+.nav-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .navbar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-block: 28px;
-    margin: 0 5%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 5%;
+  color: $color-text-light;
+}
+
+.mask{
+  background: $color-primary;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  transition: width .5s ease-in-out;
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+}
+
+.logo img{
+  width: 60px;
+  height: 60px;
+  color: inherit;
 }
 
 .menu {
-    display: flex;
-}
+  display: flex;
 
-.menu-btn {
+  &-btn {
     display: none;
+  }
+  
+  &-items {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+  }
+  
+  &-items a {
+      font-size: $fs-400;
+      color: inherit;
+      text-decoration: none;
+  }
 }
 
-.menu-items {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-}
 
-.menu-items a {
-    font-size: $fs-400;
-    color: $color-text-light;
-    text-decoration: none;
-}
 
 @media screen and (max-width: 830px) {
     .navbar {
