@@ -3,7 +3,6 @@
 .projects {
   background: $linear-gradient;
   color: $color-text-light;
-  height: 100vh;
   padding: 5%;
 
   &-container {
@@ -25,7 +24,7 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-columns: auto;
     grid-gap: 2rem;
 }
 
@@ -87,4 +86,17 @@
     &:hover .project-description p{
       transform: translateY(0);
     }
+}
+
+// Responsive
+
+@media screen and (min-width: 968px) {
+
+  .projects{
+    height: 100vh;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }

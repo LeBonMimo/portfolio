@@ -22,6 +22,13 @@ export const Projects = () => {
                             <p>Site de mon groupe de musique</p>
                         </div>
                     </a>
+                    <a href='https://zap88.vosges.fr/Beneficiaires/Views/Accueil.aspx' className="project">
+                        <img className='project-logo' src={getImageUrl("projects/Zap-vosge.png")} alt="project 1" />
+                        <div className="project-description">
+                            <h3>zap88.vosges.fr</h3>
+                            <p>Projet durant mon alternance</p>
+                        </div>
+                    </a>
                     <a href='https://www.jeunest.fr/' className="project">
                         <img className='project-logo' src={getImageUrl("projects/logo-jeun-est.png")} alt="project 1" />
                         <div className="project-description">

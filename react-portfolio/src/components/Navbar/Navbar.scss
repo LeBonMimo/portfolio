@@ -33,6 +33,10 @@
   height: 70px;
   color: inherit;
   animation: spin 6s infinite linear;
+
+  &:hover{
+    animation-play-state: paused;
+  }
 }
 
 .menu {
