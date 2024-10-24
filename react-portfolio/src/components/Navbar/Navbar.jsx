@@ -27,16 +27,16 @@ export const Navbar = () => {
 
     return (
         <div className='nav-container'>
-            <div className='mask' style={{width: maskWidth}}></div>
+            <div className='mask' style={menuOpen ? {width: '100%'} : {width: maskWidth}}></div>
             <nav className='navbar'>
                 <a className='logo' href="/"><img src={getImageUrl("logo/logo.svg")} alt="logo image" /></a>
                 <div className='menu'>
-                    {
-                        menuOpen 
-                        ? <X className='menu-btn' size={36} color="#ffffff" alt='menu-close-button' onClick={() => setMenuOpen(!menuOpen)}/> 
-                        : <List className='menu-btn' size={36} color="#ffffff" alt='menu-button' onClick={() => setMenuOpen(!menuOpen)}/>
-                    }
-                    <ul className={`${'menu-items'} ${menuOpen && 'menu-open'}`} onClick={() => setMenuOpen(false)}>
+                    <button aria-label="Toggle Menu" className={`menu-btn ${menuOpen ? 'menu-open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+                        <span class="first"></span>
+                        <span class="second"></span>
+                        <span class="third"></span>
+                    </button>
+                    <ul className={`menu-items ${menuOpen ? 'menu-open' : ''}`} onClick={() => setMenuOpen(false)}>
                         <li><a href="#Pres">Présentation</a></li>
                         <li><a href="#Projects">Projets</a></li>
                         <li><a href="#Contact">Contact</a></li>

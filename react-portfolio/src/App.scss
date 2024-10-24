@@ -6,10 +6,18 @@
   initial-value: 23.22deg;
 }
 
+body{
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+}
+
 .App {
   background-color: $color-bg;
   width: 100%;
   height: 100%;
+
+
 }
 
 .hero{
