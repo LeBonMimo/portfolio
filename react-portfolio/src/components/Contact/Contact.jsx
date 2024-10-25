@@ -5,6 +5,9 @@ import { ContactForm } from '../ContactForm/ContactForm'
 
 
 export const Contact = () => {
+
+    const linkedin = getImageUrl("contact/linkedin-logo.svg")
+
     return (
         <section id='Contact' className="contact">
             <div className="contact-container">  

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactForm.scss'
+import { ContactLinks } from '../ContactLinks/ContactLinks'
 import emailjs from 'emailjs-com';
 
 export const ContactForm = () => {
@@ -132,6 +133,21 @@ export const ContactForm = () => {
           <button role="button" type="submit"><span className='text'>Envoyer</span></button>
         </div>
       </form>
+      <div className="contact-links-wrapper">
+        <ContactLinks 
+            svg = {"contact/linkedin-logo.svg"}
+            href={"https://www.linkedin.com/in/guillaume-schwab/"}
+            alt={"lien vers mon Linkedin"}
+            title={"Voici mon Linkedin"}
+        />
+
+        <ContactLinks 
+            svg = {"contact/github-logo.svg"}
+            href={"https://github.com/LeBonMimo"}
+            alt={"lien vers mon Github"}
+            title={"Voici mon Github"}
+        />
+      </div>
     </div>
   );
 };

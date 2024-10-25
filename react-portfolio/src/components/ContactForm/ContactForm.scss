@@ -11,13 +11,7 @@
     font-weight: bold;
   }
 
-  .form-semicolumn{
-    display: flex;
-    gap: 1rem;
-    & div{
-      width: 100%;
-    }
-  }
+ 
   
   .contact-form input, 
   .contact-form textarea {
@@ -98,3 +92,21 @@
       position: relative;
     }
   }
+
+  .contact-links-wrapper{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 568px) {
+  .form-semicolumn{
+    display: flex;
+    gap: 1rem;
+    & div{
+      width: 100%;
+    }
+  }
+}

@@ -3,7 +3,6 @@
 .pres {
   background-color: $color-bg-light;
   color: $color-text-dark;
-  height: 100vh;
   padding: 5%;
 
   &-container {
@@ -44,6 +43,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .pres{
+    height: 100vh;
+  }
+
   .pres-text {
     width: 50%;
   }
