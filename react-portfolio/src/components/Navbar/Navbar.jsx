@@ -32,9 +32,9 @@ export const Navbar = () => {
                 <a className='logo' href="/"><img src={getImageUrl("logo/logo.svg")} alt="logo image" /></a>
                 <div className='menu'>
                     <button aria-label="Toggle Menu" className={`menu-btn ${menuOpen ? 'menu-open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
-                        <span class="first"></span>
-                        <span class="second"></span>
-                        <span class="third"></span>
+                        <span className="first"></span>
+                        <span className="second"></span>
+                        <span className="third"></span>
                     </button>
                     <ul className={`menu-items ${menuOpen ? 'menu-open' : ''}`} onClick={() => setMenuOpen(false)}>
                         <li><a href="#Pres">Présentation</a></li>
