@@ -1,0 +1,58 @@
+@import "../../vars.scss";
+
+.testimonial {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  &-slide{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: $color-primary;
+    color: $color-text-light;
+    border: 2px solid $color-secondary;
+    padding: 2rem;
+    border-radius: 8px;
+    font-size: $fs-400;
+    font-style: italic;
+    width: 100%;
+
+    .author{
+      display: flex;
+
+      &-avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 1rem;
+      }
+
+      .author-description{
+        h3 {
+          text-align: start;
+        }
+
+        cite{
+          font-size: $fs-300;
+        }
+      }
+    }
+
+    blockquote {
+      font-size: $fs-300;
+      text-align: left;
+    }
+  }
+}

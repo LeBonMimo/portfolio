@@ -89,6 +89,10 @@
     }
 }
 
+.testimonials-container {
+  margin-top: 3rem;
+}
+
 // Responsive
 
 @media screen and (min-width: 968px) {
@@ -99,6 +103,6 @@
 
 @media screen and (min-width: 1268px) {
   .projects{
-    height: 100vh;
+    min-height: 100vh;
   }
 }
